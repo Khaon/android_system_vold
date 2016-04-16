@@ -48,13 +48,14 @@ common_shared_libraries := \
 	liblogwrap \
 	libext4_utils \
 	libf2fs_sparseblock \
+	libcrypto_utils \
 	libcrypto \
 	libselinux \
 	libutils \
 	libhardware \
 	libsoftkeymaster \
 	libbase \
-  libext2_blkid
+  	libext2_blkid
 
 common_static_libraries := \
 	libfs_mgr \
@@ -62,10 +63,10 @@ common_static_libraries := \
 	libfec_rs \
 	libsquashfs_utils \
 	libscrypt_static \
-	libmincrypt \
 	libbatteryservice \
     libext2_blkid \
-    libext2_uuid_static
+    libext2_uuid_static \
+	libbatteryservice
 
 vold_conlyflags := -std=c11
 vold_cflags := -Werror -Wall -Wno-missing-field-initializers -Wno-unused-variable -Wno-unused-parameter
